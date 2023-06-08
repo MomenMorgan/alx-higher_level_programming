@@ -1,0 +1,6 @@
+#!/usr/bin/python3
+def islower(c):
+    if ord(c) >= int(97) and ord(c) <= int(122):
+        return 1
+    else:
+        return 0
