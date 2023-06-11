@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-from re import T
-
-
 def divisible_by_2(my_list=[]):
     new_lis = []
 
