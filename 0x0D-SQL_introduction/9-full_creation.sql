@@ -1,5 +1,5 @@
 -- Creates a table in mysql data base
--- Second table with (id, name, score)
+-- Second table with id, name, score
 CREATE TABLE IF NOT EXISTS second_table (
        id INT,
        name VARCHAR(256),
