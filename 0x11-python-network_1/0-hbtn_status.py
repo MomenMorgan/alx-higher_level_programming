@@ -1,7 +1,10 @@
 #!/usr/bin/python3
+""" Write a Python script that fetches https://alx-intranet.hbtn.io/status"""
+
+
 import urllib.request
 import urllib.parse
-""" Write a Python script that fetches https://alx-intranet.hbtn.io/status"""
+
 if __name__ == "__main__":
     with urllib.request.urlopen('https://intranet.hbtn.io/status') as response:
         html = response.read()
