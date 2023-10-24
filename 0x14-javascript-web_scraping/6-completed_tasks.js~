@@ -1,0 +1,25 @@
+#!/usr/bin/node
+
+//script that computes the number of tasks completed by user id.
+
+
+const req = require("request")
+
+const args = process.argv[2]
+
+
+req(args, (err, res, body) => {
+
+    if (err) {
+	console.log(err)
+    }
+
+    body = JSON.parse(body).filter((el) => {
+	return el.userId
+    });
+
+
+    console.log(body)
+
+
+});
