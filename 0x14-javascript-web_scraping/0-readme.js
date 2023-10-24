@@ -2,6 +2,15 @@
 
 // script to recive word and print it
 
-const cat = process.argv[2];
+const file = require('fs');
+const args = process.argv[2];
 
-console.log(cat);
+// fetch the content
+file.readFile(args, 'utf8', (error, data) => {
+  if (error) {
+    console.log(error);
+    return;
+  }
+
+  console.log(data);
+});

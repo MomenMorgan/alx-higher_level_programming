@@ -1,7 +1,0 @@
-#!/usr/bin/node
-
-// script to recive word and print it
-
-const cat = process.argv[3]
-
-console.log(cat)
