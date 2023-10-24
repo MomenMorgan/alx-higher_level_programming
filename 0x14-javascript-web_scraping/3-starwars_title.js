@@ -2,14 +2,10 @@
 
 // script that prints the title of a Star Wars movie
 
-const Id = process.argv[2];
+const request = require('request');
+const starWarsUri = 'https://swapi-api.hbtn.io/api/films/'.concat(process.argv[2]);
 
-const req = require('request');
-
-const url = 'https://swapi-api.alx-tools.com/api/films/'.concat(Id);
-
-req(url, (_err, res, body) => {
+request(starWarsUri, function (_err, _res, body) {
   body = JSON.parse(body);
-
   console.log(body.title);
 });
